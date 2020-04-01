@@ -1,0 +1,44 @@
+footer {
+    @include container;
+}
+
+.footer {
+    @include wrap;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .footer-logo {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 40px 0;
+    }
+
+    .footer-menu__link {
+        @include button;
+        padding: 10px 0;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 2px;
+
+        & i {
+            width: 45px;
+        }
+    }
+
+    .footer-copy {
+        margin: 40px 0;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    @media #{$tablet} {
+        & {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 70px;
+            align-items: center;
+        }
+    }
+}
