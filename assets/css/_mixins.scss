@@ -1,0 +1,125 @@
+//content wrap
+
+@mixin container {
+    max-width: 320px;
+    margin: 0 auto;
+
+    @media #{$tablet} {
+        max-width: 768px;
+    }
+
+    @media #{$desktop} {
+        max-width: 1200px;
+    }
+}
+
+@mixin  wrap {
+    max-width: 280px;
+    margin: 0 auto;
+
+    @media #{$tablet} {
+        max-width: 648px;
+    }
+
+    @media #{$desktop} {
+        max-width: 960px;
+    }
+}
+
+//site headers
+
+@mixin title {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: inherit;
+    color: $text;
+    text-transform: uppercase;
+
+    @media #{$tablet} {
+        font-size: 30px;
+    }
+}
+
+//for site buttons
+
+@mixin button {
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    padding: 20px 0;
+    background-color: $btn;
+    text-align: center;
+
+    &:active{
+        background-color: $btn_active;
+        color: #88b6d1;
+    }
+
+    &:disabled{
+        background-color:#cecece;
+    }
+
+    @media #{$desktop} {
+        &:hover {
+            background-color: $btn_hover;
+        }
+    }
+}
+
+//links
+@mixin link{
+    color:$text;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration:none;
+
+    &:active{
+        color:$input_hover;
+    }
+
+    @media #{$desktop}{
+        &:hover{
+            color:$btn;
+        }
+    }
+}
+
+@mixin link_active{
+    color:#766357;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration:none;
+
+     &:active {
+         color: #d6d0cc;
+     }
+
+     @media #{$desktop} {
+         &:hover {
+             color: #604e43;
+         }
+     }
+}
+
+//for input fields
+
+@mixin input {
+    background-color:$input;
+    padding: 20px;
+    outline: none;
+    border:none;
+    font-size: 14px;
+
+    &:focus{
+        background-color:#fff;
+        border:solid 2px $input_hover;
+    }
+
+    @media #{$desktop}{
+        &:hover {
+            background-color: $input_hover;
+        }
+    }
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext"
+        rel="stylesheet">
+        <!--main css file-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--normalize file-->
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <!--fa icons-->
+        <link rel="stylesheet" href="assets/icons/css/all.css">
+        <!--polifill for <picture>-->
+        <script src="assets/js/polifill.js"></script>
+    <title>Sedona</title>
+</head>
+<body>
+<header class="header">
+        <nav class="header-menu">
+            <a class="header-menu__link">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="assets/images/header/logo-d.png">
+                    <source media="(min-width: 768px)" srcset="assets/images/header/logo-t.png">
+                    <img src="assets/images/header/logo-m.png" alt="LOGO">
+                </picture>
+            </a>
+            <a href="index.html" class="header-menu__link header-menu__link_active">Главная</a>
+            <a href="photo.html" class="header-menu__link">Фото и видео</a>
+            <a href="form.html" class="header-menu__link">Форма отзыва</a>
+            <a href="#map" class="header-menu__link">Карта штата</a>
+        </nav>
+        <div class="header-intro">
+            <div class="header-intro__text">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/header/text-d.png">
+                    <img src="assets/images/header/text-m.png">
+                </picture>
+            </div>
+            <div class="header-intro__fill">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="assets/images/header/tr-d.png">
+                    <source media="(min-width: 768px)" srcset="assets/images/header/tr-t.png">
+                    <img src="assets/images/header/tr-m.png" alt="">
+                </picture>
+            </div>
+        </div>
+        <div class="burger-btn">
+            <div class="burger-btn__line"></div>
+            <div class="burger-btn__line"></div>
+            <div class="burger-btn__line"></div>
+            <div class="burger-btn__line"></div>
+        </div>
+</header>
+
+    <!--google maps-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8rjor4g0OldFvBL_wVMc5DP-o5bKb71g&callback=initMap"
+    async defer></script>
+    <!--jquery-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!--slick slider-->
+    <script src="assets/js/slick.min.js"></script>
+    <!--main file-->
+    <script src="assets/js/main.js"></script> 
+</body>
+</html>
