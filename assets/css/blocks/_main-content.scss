@@ -1,0 +1,152 @@
+.main-content {
+    @include container;
+    text-align: center;
+
+    .main-content__title {
+        @include small-title;
+        padding: 0 25px;
+        margin: 40px 0;
+    }
+
+    .main-content__subtitle {
+        @include subtitle;
+        padding: 0 10px;
+    }
+}
+
+.main-content__cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+    .card {
+
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5) {
+            text-align: left;
+
+            .card__icon {
+                float: left;
+                margin: 10px 20px 50px 20px;
+            }
+        }
+
+        &:nth-child(1),
+        &:nth-child(6) {
+            background-color: $btn;
+            color: #fff;
+        }
+
+        &:nth-child(8),
+        &:nth-child(9),
+        &:nth-child(10) {
+            background-color: #eeeeee;
+            border-bottom: solid 2px #d6d6d6;
+        }
+
+        &:nth-child(10) {
+            border: none;
+        }
+    }
+
+    .card__title {
+        @include small-title;
+        margin: 40px 0 20px 0;
+        padding: 0 50px;
+    }
+
+    .card__text {
+        @include subtitle;
+        margin: 30px 0 40px 0;
+        padding: 0 35px;
+    }
+
+    .card__number {
+        @include subtitle;
+    }
+
+    .card__photo {
+        width: 100%;
+        height: 200px;
+    }
+//media tablet
+    @media #{$tablet} {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 80px;
+
+        .card {
+            flex-basis: 33.3%;
+        }
+
+        .card:nth-child(2),
+        .card:nth-child(7) {
+            flex-basis: 66.6%;
+
+            .card__photo {
+                height: 100%;
+            }
+        }
+
+        .card:nth-child(3),
+        .card:nth-child(4),
+        .card:nth-child(5) {
+            text-align: center;
+            padding-top: 40px;
+
+            .card__icon {
+                float: none;
+                margin: 0;
+            }
+        }
+
+        .card:nth-child(8),
+        .card:nth-child(9) {
+            border: none;
+        }
+
+        .card:nth-child(6) {
+            order: 7;
+        }
+
+        .card:nth-child(7) {
+            order: 6;
+        }
+
+        .card:nth-child(8) {
+            order: 8;
+        }
+
+        .card:nth-child(9) {
+            order: 9;
+        }
+
+        .card:nth-child(10) {
+            order: 10;
+        }
+
+    }
+//media desktop
+    @media #{$desktop} {
+        .card {
+            height: 300px;
+
+            .card__title {
+                margin-top: 80px;
+            }
+
+            .card__text {
+                padding: 0 80px;
+            }
+        }
+
+        .card:nth-child(3),
+        .card:nth-child(4),
+        .card:nth-child(5) {
+            .card__title {
+                margin-top: 20px;
+            }
+        }
+    }
+}

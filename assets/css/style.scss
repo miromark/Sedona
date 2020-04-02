@@ -8,6 +8,11 @@ body * {
     font-family: $font;
 }
 
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
 header, section{
     border-bottom:solid 1px red;
 }
@@ -18,3 +23,5 @@ footer{
 //blocks
 @import "blocks/_header.scss";
 @import "blocks/_footer.scss";
+@import "blocks/_main-content.scss";
+@import "blocks/_map.scss";

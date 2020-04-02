@@ -31,13 +31,29 @@
 @mixin title {
     font-size: 18px;
     font-weight: 700;
+    color:$text;
     font-family: inherit;
-    color: $text;
     text-transform: uppercase;
 
     @media #{$tablet} {
         font-size: 30px;
     }
+}
+
+@mixin small-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    @media #{$tablet}{
+        font-size: 21px;
+    }
+}
+
+@mixin subtitle{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
 //for site buttons
