@@ -55,6 +55,133 @@
                <div class="burger-btn__line"></div>
            </div>
        </header>
+      <section class="review">
+        <h2 class="review__title">
+            Оставьте свой отзыв
+        </h2>
+        <h3 class="review__subtitle">
+            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        </h3>
+        <form class="review__form" id="review__form" name="review__form" onsubmit="validate()">
+            <fieldset class="user-name">
+                <legend>
+                    Представьтесь, пожалуйста:
+                </legend>
+                <div class="user-name__first-name full-name">
+                    <label for="first-name">
+                        Имя:
+                    </label>
+                    <input type="text" class="first-name" id="first-name" name="first-name" placeholder="Иван" onblur="testName()">
+                </div>
+                <div class="user-name__second-name full-name">
+                    <label for="second-name">
+                        Фамилия:
+                    </label>
+                    <input type="text" class="second-name" id="second-name" name="second-name" placeholder="Иванов" onblur="testSecondName()">
+                </div> 
+                 <div class="user-name__surname full-name">
+                     <label for="second-name">
+                         Отчество:
+                    </label>
+                    <input type="text" class="surname" id="surname" name="surname" placeholder="Иванович" onblur="testSurName()">
+                 </div>
+            </fieldset>
+            <fieldset class="contact-information">
+                <legend>Контактная информация:</legend>
+                <div class="contact-information__phone">
+                    <label for="phone">
+                        Контактный телефон:
+                    </label>
+                    <input type="text" class="phone" id="phone" placeholder="Введите телефона" onblur="testPhone()">
+                    <span>Например: 111111111 (без +380)</span>
+                </div>
+                <div class="contact-information__email">
+                    <label for="email">
+                        Электронная почта:
+                    </label>
+                    <input type="text" class="email" id="email" placeholder="Введите e-mail" onblur="testEmail()">
+                    <span>Например: aaaaaaaa@aaa.com</span>
+                </div>
+            </fieldset>    
+            <fieldset class="radio-field">
+                <legend>ВАше Общее впечатление:</legend>
+                <div class="radio">
+                    <input type="radio" name="impression" id="value-1" value="1" checked>
+                    <label for="value-1">
+                         Скорее положительное
+                    </label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="impression" id="value-2" value="2">
+                    <label for="value-2">
+                        Скорее отрицательное
+                    </label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="impression" id="value-3" value="3">
+                    <label for="value-3">
+                        Затрудняюсь ответить
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="checkbox-field">
+                <legend>посещенные <br>достопримечательности:</legend>
+                <div class="checkbox">
+                    <input type="checkbox" name="place" value="bridge" id="bridge" checked>
+                    <label for="bridge">
+                        Мост Дьявола
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="place" value="park" id="park">
+                    <label for="park">
+                        Слайд-парк
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="place" value="mount" id="mount">
+                    <label for="mount">
+                        Гора-Колокол
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="place" value="red-rock" id="red-rock">
+                    <label for="red-rock">
+                        Красные скалы
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="review-text">
+                <legend>Опишите свои эмоции:</legend>
+                <textarea name="review-text" id="review-text"
+                    placeholder="Опишите подробно все свои восторги "></textarea>
+            </fieldset>
+            <div class="form_btn">
+                <button type="submit" class="send-form">ОТПРАВИТЬ ОТЗЫВ</button>
+                <p class="required-fields">* — обязательные поля</p>
+            </div>
+        </form>
+        <div class="review__send_success">
+            <h2 class="success__title">
+                Ваш отзыв отправлен!
+            </h2>
+            <h3 class="success__subtitle">
+                Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+                В ближайшее время мы опубликуем его на сайте.
+            </h3>
+            <button type="button" class="success__btn">закрыть окно</button>
+        </div>
+        <div class="review__send_error">
+            <h2 class="error__title">
+                Что-то пошло
+                не так!
+            </h2>
+            <h3 class="error__subtitle">
+                Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+            </h3>
+            <button type="button" class="error__btn">ok</button>
+        </div>
+      </section>
        <footer>
            <div class="footer">
             <div class="footer-logo">
