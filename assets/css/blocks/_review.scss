@@ -1,5 +1,6 @@
 .review {
     @include container;
+    position: relative;
 
     .review__title {
         @include title;
@@ -428,7 +429,73 @@ textarea:-ms-input-placeholder {
      }
 }
 
-.review__send_error,
-.review__send_success {
+.review__send_success{
     display: none;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    width: 280px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+
+    .success__title{
+        @include title;
+        margin: 20px 0;
+    }
+
+    .success__subtitle{
+        @include subtitle;
+    }
+
+    .success__btn{
+        @include button;
+        width: 80%;
+        margin: 20px 0;
+        border:none;
+        cursor: pointer;
+    }
+
+    @media #{$tablet}{
+        width: 648px;
+    }
+}
+
+.review__send_error{
+   display: none;
+   position: fixed;
+   top: 50px;
+   left: 50%;
+   transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   -o-transform: translateX(-50%);
+   width: 280px;
+   text-align: center;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+
+   .error__title{
+       @include title;
+       margin: 30px 0;
+   }
+
+   .error__subtitle{
+       @include subtitle;
+       padding: 0 21px;
+   }
+
+   .error__btn{
+       @include button;
+       border:none;
+       margin: 20px 0;
+       width: 80%;
+       cursor: pointer;
+   }
 }
