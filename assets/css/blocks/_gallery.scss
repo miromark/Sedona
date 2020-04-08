@@ -1,0 +1,117 @@
+.gallery {
+    @include container;
+
+    .gallery__title {
+        @include title;
+        margin: 42px 0;
+        text-align: center;
+
+        @media #{$tablet} {
+            margin: 72px 0 42px 0;
+        }
+    }
+
+    .gallery__subtitle {
+        @include subtitle;
+        margin-bottom: 42px;
+        padding: 0 25px;
+        text-align: center;
+
+        @media #{$tablet} {
+            padding: 0 165px;
+        }
+
+        @media #{$desktop} {
+            padding: 0 380px;
+        }
+    }
+}
+
+.gallery__posts {
+    display: flex;
+    flex-direction: column;
+
+    @media #{$tablet} {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 648px;
+        margin: 0 auto;
+    }
+
+    @media #{$desktop} {
+        max-width: 100%;
+    }
+}
+
+.post {
+    padding: 24px 0;
+    border-top: 2px solid $input;
+
+    .post__photo {
+        text-align: center;
+    }
+
+    @media #{$tablet} {
+        border: none;
+        padding: 0;
+    }
+}
+
+
+
+.post__info {
+    margin: - 3px 20px 0 20px;
+
+    @media #{$tablet} {
+        background-color: $input;
+        display: flex;
+        justify-content: space-between;
+        margin: -3px 0 0 0;
+        padding: 20px;
+    }
+
+    @media #{$desktop} {
+        background-color: rgba(#000000, .8);
+        color: #fff;
+        margin-top: -95px;
+        opacity: 0.8;
+    }
+}
+
+.post__description {
+
+    .photo-name {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 5px 0;
+    }
+
+    .photo-author {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+}
+
+.post__likes {
+    font-size: 14px;
+    padding: 5px 0;
+
+    .like__icon {
+        color: #a9a9a9;
+        font-size: 24px;
+        cursor: pointer;
+
+        @media #{$desktop} {
+            color: #fff;
+        }
+    }
+
+    .like__icon_active {
+        color: rgb(167, 76, 76);
+    }
+
+    .like__number {
+        font-weight: 600;
+    }
+}

@@ -61,7 +61,6 @@ function testName() {
      return true;
    };
 }
-
 function testSecondName() {
   if (document.forms.review__form[2].value.length < 3) {
     document.forms.review__form[2].style.border = "red solid 1px";
@@ -126,8 +125,6 @@ function testEmail() {
   }
 }
 
-console.log(testFullName());
-
 function validate() {
         let modalSuccess = document.querySelector(".review__send_success"); //
             modalError = document.querySelector(".review__send_error");
@@ -147,4 +144,8 @@ function validate() {
         }
 }
 
-//butttons for closing modals
+//slider
+
+$(document).ready(function(){
+  $(".slider").slick();
+});

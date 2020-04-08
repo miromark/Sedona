@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext"
-            rel="stylesheet">
-        <!--main css file-->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <!--normalize file-->
-        <link rel="stylesheet" href="assets/css/normalize.css">
-        <!--fa icons-->
-        <link rel="stylesheet" href="assets/icons/css/all.css">
-        <!--polifill for <picture>-->
-        <script src="assets/js/polifill.js"></script>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext"
+        rel="stylesheet">
+    <!--main css file-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--normalize file-->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!--fa icons-->
+    <link rel="stylesheet" href="assets/icons/css/all.css">
+    <!--polifill for <picture>-->
+    <script src="assets/js/polifill.js"></script>
     <title>Sedona</title>
 </head>
 
@@ -29,7 +29,7 @@
                 </picture>
             </a>
             <a href="index.html" class="header-menu__link">Главная</a>
-            <a href="photo.html" class="header-menu__link header-menu__link_active">Фото и видео</a>
+            <a href="photo.html" class="header-menu__link header-menu__link_active">Галерея</a>
             <a href="form.html" class="header-menu__link">Форма отзыва</a>
             <a href="#map" class="header-menu__link">Карта штата</a>
         </nav>
@@ -55,40 +55,196 @@
             <div class="burger-btn__line"></div>
         </div>
     </header>
+    <section class="gallery">
+        <h2 class="gallery__title">
+            Фото галерея
+        </h2>
+        <h3 class="gallery__subtitle">
+            Не можете решиться на путешествие из-за курса?
+            Фотографии помогут вам забыть о политике и экономике.
+        </h3>
+        <div class="gallery__posts">
+            <div class="post">
+                <div class="post__photo">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="assets/images/photo-page/photo-1-desktop.jpg.png">
+                        <source media="(min-width:768px )" srcset="assets/images/photo-page/photo-1-tablet.jpg.png">
+                        <img src="assets/images/photo-page/photo-1-mobile.jpg.png" alt=" Неродные просторы">
+                    </picture>
+                </div>
+                <div class="post__info">
+                    <div class="post__description">
+                        <p class="photo-name">
+                            неродные просторы
+                        </p>
+                        <p class="photo-author">
+                            Автор фото: Борис
+                        </p>
+                    </div>
+                    <div class="post__likes">
+                        <span class="like__icon">
+                            <i class="far fa-thumbs-up"></i>
+                        </span>
+                        <span class="like__number">
+                            1350
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post__photo">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="assets/images/photo-page/photo-2-desktop.jpg.png">
+                        <source media="(min-width: 768px)" srcset="assets/images/photo-page/photo-2-tablet.jpg.png">
+                        <img src="assets/images/photo-page/photo-2-mobile.jpg.png" alt="Местная растительность">
+                    </picture>
+                </div>
+                <div class="post__info">
+                    <div class="post__description">
+                        <p class="photo-name">
+                            Местная растительность
+                        </p>
+                        <p class="photo-author">
+                            Автор фото: Сергей
+                        </p>
+                    </div>
+                    <div class="post__likes">
+                        <span class="like__icon">
+                            <i class="far fa-thumbs-up"></i>
+                        </span>
+                        <span class="like__number">
+                            143
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post__photo">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="assets/images/photo-page/photo-3-desktop.jpg.png">
+                        <source media="(min-width: 768px)" srcset="assets/images/photo-page/photo-3-tablet.jpg.png">
+                        <img src="assets/images/photo-page/photo-3-mobile.jpg.png" alt="Дорога на север">
+                    </picture>
+                </div>
+                <div class="post__info">
+                    <div class="post__description">
+                        <p class="photo-name">
+                            Дорога на север
+                        </p>
+                        <p class="photo-author">
+                            Автор фото: Петр
+                        </p>
+                    </div>
+                    <div class="post__likes">
+                        <span class="like__icon">
+                            <i class="far fa-thumbs-up"></i>
+                        </span>
+                        <span class="like__number">
+                            96
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post__photo">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="assets/images/photo-page/photo-4-desktop.jpg.png">
+                        <source media="(min-width: 768px)" srcset="assets/images/photo-page/photo-4-tablet.jpg.png">
+                        <img src="assets/images/photo-page/photo-4-mobile.jpg.png" alt="Мост дьявола">
+                    </picture>
+                </div>
+                <div class="post__info">
+                    <div class="post__description">
+                        <p class="photo-name">
+                            Мост дьявола
+                        </p>
+                        <p class="photo-author">
+                            Автор фото: Антон
+                        </p>
+                    </div>
+                    <div class="post__likes">
+                        <span class="like__icon">
+                            <i class="far fa-thumbs-up"></i>
+                        </span>
+                        <span class="like__number">
+                            254
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-slider">
+        <div class="slider">
+            <div class="slide">
+                <img src="assets/images/photo-page/slide1.jpg" class="slide__image">
+            </div>
+            <div class="slide">
+                <img src="assets/images/photo-page/slide2.jpg" class="slide__image">
+            </div>
+            <div class="slide">
+                <img src="assets/images/photo-page/slide3.jpeg" class="slide__image">
+            </div>
+            <div class="slide">
+                <img src="assets/images/photo-page/slide4.jpg" class="slide__image">
+            </div>
+            <div class="slide">
+                <img src="assets/images/photo-page/slide5.jpg" class="slide__image">
+            </div>
+            <div class="slide">
+                <img src="assets/images/photo-page/slide6.jpg" class="slide__image">
+            </div>
+            <div class="slide">
+                <img src="assets/images/photo-page/slide7.jpg" class="slide__image">
+            </div>
+            <div class="slide">
+                <img src="assets/images/photo-page/slide8.jpg" class="slide__image">
+            </div>
+            <div class="slide">
+                <img src="assets/images/photo-page/slide9.jpg" class="slide__image">
+            </div>
+            <div class="slide">
+                <img src="assets/images/photo-page/slide10.jpg" class="slide__image">
+            </div>
+            <div class="slide">
+                <img src="assets/images/photo-page/slide11.jpg" class="slide__image">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="footer-logo">
+                <p class="footer-logo__text">#visitsedona</p>
+            </div>
+            <div class="footer-menu">
+                <a href="https://twitter.com" class="footer-menu__link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://facebook.com" class="footer-menu__link" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://youtube.com" class="footer-menu__link" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <div class="footer-copy">
+                <p class="footer-copy__text">&copy 2020</p>
+            </div>
+        </div>
+    </footer>
 
-      <footer>
-          <div class="footer">
-              <div class="footer-logo">
-                  <p class="footer-logo__text">#visitsedona</p>
-              </div>
-              <div class="footer-menu">
-                  <a href="https://twitter.com" class="footer-menu__link" target="_blank">
-                      <i class="fab fa-twitter"></i>
-                  </a>
-                  <a href="https://facebook.com" class="footer-menu__link" target="_blank">
-                      <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="https://youtube.com" class="footer-menu__link" target="_blank">
-                      <i class="fab fa-youtube"></i>
-                  </a>
-              </div>
-              <div class="footer-copy">
-                  <p class="footer-copy__text">&copy 2020</p>
-              </div>
-          </div>
-      </footer>
-
-    <div class="content"></div>
-   <!--google maps-->
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8rjor4g0OldFvBL_wVMc5DP-o5bKb71g&callback=initMap"
-       async defer></script>
-   <!--jquery-->
-   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-   <!--slick slider-->
-   <script src="assets/js/slick.min.js"></script>
-   <!--main file-->
-   <script src="assets/js/main.js"></script>
+    <!--google maps-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8rjor4g0OldFvBL_wVMc5DP-o5bKb71g&callback=initMap"
+        async defer></script>
+    <!--jquery-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!--slick slider-->
+    <script src="assets/js/slick.min.js"></script>
+    <!--file for slider-->
+    <script src="assets/js/slider.js"></script>
+    <!--main file-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
