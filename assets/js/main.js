@@ -142,10 +142,10 @@ function validate() {
           modalError.style.display = "none";
          }
         }
-}
+};
 
-//slider
 
-$(document).ready(function(){
-  $(".slider").slick();
-});
+
+
+
+

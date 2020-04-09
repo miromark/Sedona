@@ -13,15 +13,6 @@ a{
     text-decoration: none;
 }
 
-
-
-header, section{
-    border-bottom:solid 1px red;
-}
-footer{
-    border-top:solid 1px blue;
-}
-
 //blocks
 @import "blocks/_header.scss";
 @import "blocks/_footer.scss";
