@@ -158,13 +158,14 @@
 
     .header-intro__fill {
         position: absolute;
-        bottom: 0;
+        bottom: -3px;
+    }
+        //for mane page
+    .index__fill{
+        bottom:0;
     }
 
     //omit the fill for the form-page and photo page 
-    .fill_form {
-        bottom: -3px;
-    }
 
     @media #{$tablet} {
         & {

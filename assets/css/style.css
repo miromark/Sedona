@@ -247,11 +247,11 @@ a {
 
 .header-intro .header-intro__fill {
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
 }
 
-.header-intro .fill_form {
-  bottom: -3px;
+.header-intro .index__fill {
+  bottom: 0;
 }
 
 @media (min-width: 768px) {
